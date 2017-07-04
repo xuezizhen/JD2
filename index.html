@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link href="css/reset.css" rel="stylesheet " type="text/css"/>
+    <link href="css/index.css" rel="stylesheet " type="text/css"/>
+    <script>
+        window.onload=function(){
+            var oUl=document.getElementById("nav");
+            var oMid=document.getElementById("mid");
+            var aLi=oUl.getElementsByTagName("li");
+            var aMid1=oMid.getElementsByClassName("mid1");
+            for(var i=0;i<aLi.length;i++){
+                aLi[i].index=i;
+                aLi[i].onmousemove=function(){
+                    for(var j=0;j<aLi.length;j++){
+                        aLi[j].className="";
+                        aMid1[j].style.display="none";
+                    }
+                    this.className="ac";
+                    aMid1[this.index].style.display="block";
+                }
+                aLi[i].onmouseout=function(){
+                    aMid1[this.index].style.display="none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="inner">
+        <div class="left">
+            <p>送至：<a href="#">北京</a> </p>
+            <a href="#"><img src="images/arr_03.jpg"></a>
+        </div>
+        <ul>
+            <li>你好，请登录 <a href="#" class="free">免费注册</a> <span>|</span></li>
+            <li><a href="#">我的订单</a> <span>|</span></li>
+            <li><a href="#">我的京东<img src="images/arr_03.jpg"></a> <span>|</span></li>
+            <li><a href="#">京东会员</a> <span>|</span></li>
+            <li><a href="#">企业采购</a> <span>|</span></li>
+            <li class="shouji"><a href="#">手机京东<img src="images/arr_03.jpg"></a><span>|</span></li>
+            <li><a href="#">关注京东<img src="images/arr_03.jpg"></a><span>|</span></li>
+            <li><a href="#">客户服务<img src="images/arr_03.jpg"></a><span>|</span></li>
+            <li><a href="#">网站导航<img src="images/arr_03.jpg"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="page1 inner">
+    <div class="logo"><a href="#"> <img src="images/logo.png"/></a> </div>
+    <div class="mid">
+        <input type="text" value="卡通手机壳" class="text">
+        <button type="submit" class="btn">搜索</button>
+        <ul>
+            <li><a href="#"  class="active">七夕礼品</a> </li>
+            <li><a href="#">消暑神器</a> </li>
+            <li><a href="#">农用物资</a> </li>
+            <li><a href="#">鲜花99元</a> </li>
+            <li><a href="#">电影京券</a> </li>
+            <li><a href="#">防晒喷雾</a> </li>
+            <li><a href="#">永生花</a> </li>
+            <li><a href="#">小米电脑</a> </li>
+            <li><a href="#">thinkpad</a> </li>
+        </ul>
+    </div>
+    <div class="right">
+        <p><a href="#">我的购物车<span>></span></a></p>
+        <div class="zero">&nbsp;0</div>
+    </div>
+</div>
+<div class="page2">
+    <div class="inner">
+        <div class="left"><h3><a href="#">全部商品分类</a> </h3></div>
+        <ul>
+            <li><a href="#">服装城</a> </li>
+            <li><a href="#">美妆馆</a> </li>
+            <li><a href="#">京东超市</a> </li>
+            <li><a href="#">生鲜</a> </li>
+            <li><a href="#">全球购</a> </li>
+            <li><a href="#">闪购</a> </li>
+            <li><a href="#">团购</a> </li>
+            <li><a href="#">拍卖</a> </li>
+            <li><a href="#">金融</a> </li>
+        </ul>
+        </ul>
+    </div>
+</div>
+<div class="page3 inner">
+    <div class="left page3_left">
+        <ul id="nav">
+        <li class="ac"><h3><a href="javascript:;">家用电器<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">手机、数码、京东通信<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">电脑、办公<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">家居、家具、家装、厨具<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">男装、女装、童装、内衣<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">个护化妆、清洁用品、宠物<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">鞋靴、箱包、珠宝、奢侈品<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">运动户外、钟表<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">汽车、汽车用品<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">母婴、玩具乐器<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">食品、酒类、生鲜、特产<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">医药保健<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">图书、音像、电子书<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">彩票、旅行、充值、票务<span>></span></a> </h3></li>
+        <li><h3><a href="javascript:;">理财、众筹、白条、保险<span>></span></a> </h3></li>
+    </ul>
+    </div>
+     <div class="mid" id="mid">
+         <div class="mid1">
+             <div class="banner"><img src="images/bg_03.jpg"/> </div>
+             <div class="right">
+                 <div class="box">
+                     <h3>京东快报<a href="#"><span>更多 ></span></a> </h3>
+                     <ul>
+                         <li><a href="#"><span>[特惠]</span>【七夕特价】好礼低至9.9元！</a> </li>
+                         <li><a href="#"><span>[公告]</span>广东福建因台风影响配送延迟</a> </li>
+                         <li><a href="#"><span>[特惠]</span>京东超市男人狂欢季</a> </li>
+                         <li><a href="#"><span>[公告]</span>丹寨馆百日庆 传承文化邀你赏</a> </li>
+                         <li><a href="#"><span>[特惠]</span>夏日么么哒，礼盒第二件半价</a> </li>
+                     </ul>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                     <div class="twelve">
+                         <div class="one"></div>
+                         <p><a href="#">话费</a> </p>
+                     </div>
+                 </div>
+                 <div class="pic"><a href="#"><img src="images/bg_06.jpg"/> </a></div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢1<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢2<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢3<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢4<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢5<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢6<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢7<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢8<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢9<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢10<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢11<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢12<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢13<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+         <div class="mid1 hidden">
+             <div class="mid_left">
+                 <ul>
+                     <li class="active"><a href="#">家电狂欢14<span class="active1">></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                     <li><a href="#">家电狂欢<span>></span></a> </li>
+                 </ul>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+                 <dl>
+                     <dt><a href="#">大家电<span>></span></a> </dt>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+                     <dd><a href="#">手机</a> </dd>
+
+                 </dl>
+             </div>
+             <div class="mid_right">
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_1"><a href="#"><img src="images/572c0d37N055188f0.jpg"> </a> </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+                 <div class="right_2">
+                     <h4><a href="#">飞利浦</a> </h4>
+                     <p><a href="#">抢先购</a> </p>
+                     <img src="images/mid2_03.jpg">
+                 </div>
+             </div>
+         </div>
+     </div>
+</div>
+<div class="page4 inner">
+   <div class="today"></div>
+    <div class="iphoneSE">
+        <h3>iphone SE</h3>
+        <a>经典无可复制</a>
+        <div class="sec">暑促手慢无</div>
+        <img src="images/ip5_03.jpg"/>
+    </div>
+    <div class="iphoneSE">
+        <h3>耐克FLYKNIT跑鞋</h3>
+        <a class="other1">1元赢新品</a>
+        <div class="sec">团购低至9.9</div>
+        <div class="thr"><a class="other1" href="#">团购></a></div>
+        <img src="images/ip5_03.jpg"/>
+    </div>
+    <div class="iphoneSE">
+        <h3>彪马专场</h3>
+        <a>低至3.6折</a>
+        <div class="sec">夏季出游季</div>
+        <div class="thr"><a href="#">闪购<span>></span></a></div>
+        <img src="images/ip5_03.jpg"/>
+    </div>
+    <div class="iphoneSE">
+        <h3>机动摩托车</h3>
+        <a class="other2">限量140元/期</a>
+        <div class="sec">12期免息狂享</div>
+        <div class="thr"><a class="other2" href="#">大牌免息<span>></span></a></div>
+        <img src="images/ip5_03.jpg"/>
+    </div>
+</div>
+<div class="page5">
+    <div class="page5_top inner">
+        <h3>猜你喜欢</h3>
+        <div class="top_bg1"></div>
+        <div class="top_right">
+            <a href="#"><p>换一批</p>
+            <div class="top_bg2"></div></a>
+        </div>
+        <div class="top_bg3"></div>
+    </div>
+    <div class="page5_bot">
+        <div class="bot_six">
+            <div class="pic"><img src="images/page5_03.jpg"> </div>
+            <div class="text">
+                <p><a href="#">联想（Lenovo）小新310经典版14英寸超薄</a> </p>
+                <p><a href="#"><span>￥4399.00</span></a> </p>
+            </div>
+        </div>
+        <div class="bot_six">
+            <div class="pic"><img src="images/page5_03.jpg"> </div>
+            <div class="text">
+                <p><a href="#">联想（Lenovo）小新310经典版14英寸超薄</a> </p>
+                <p><a href="#"><span>￥4399.00</span></a> </p>
+            </div>
+        </div>
+        <div class="bot_six">
+            <div class="pic"><img src="images/page5_03.jpg"> </div>
+            <div class="text">
+                <p><a href="#">联想（Lenovo）小新310经典版14英寸超薄</a> </p>
+                <p><a href="#"><span>￥4399.00</span></a> </p>
+            </div>
+        </div>
+        <div class="bot_six">
+            <div class="pic"><img src="images/page5_03.jpg"> </div>
+            <div class="text">
+                <p><a href="#">联想（Lenovo）小新310经典版14英寸超薄</a> </p>
+                <p><a href="#"><span>￥4399.00</span></a> </p>
+            </div>
+        </div>
+        <div class="bot_six">
+            <div class="pic"><img src="images/page5_03.jpg"> </div>
+            <div class="text">
+                <p><a href="#">联想（Lenovo）小新310经典版14英寸超薄</a> </p>
+                <p><a href="#"><span>￥4399.00</span></a> </p>
+            </div>
+        </div>
+        <div class="bot_six other">
+            <div class="pic"><img src="images/page5_03.jpg"> </div>
+            <div class="text other">
+                <p><a href="#">联想（Lenovo）小新310经典版14英寸超薄</a> </p>
+                <p><a href="#"><span>￥4399.00</span></a> </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+<div class="page6 inner">
+    <h3>京东 · 品质生活</h3>
+    <div class="box">
+        <div class="big">
+            <h4>新发现</h4>
+            <div class="big_t">
+                <dl>
+                    <dt><a href="#">索尼PS VR</a> </dt>
+                    <dd><a href="#">限时抢购</a> </dd>
+                    <dd><a href="#"><span>给你现实的临场感</span></a> </dd>
+                </dl>
+            </div>
+            <div class="big_b">
+                <dl>
+                    <dt><a href="#">新趋势</a> </dt>
+                    <dd><a href="#">斯巴达极限系列</a> </dd>
+                    <dd><a href="#"><span>芬兰手工打造</span></a> </dd>
+                </dl>
+            </div>
+            <div class="big_b big_b2">
+                <dl>
+                    <dt><a href="#">限时秒杀</a> </dt>
+                    <dd><a href="#">搞“机”看眼缘</a> </dd>
+                    <dd><a href="#"><span>小米尊享1899</span></a> </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="big small">
+            <h4>好东西</h4>
+            <div class="big_t small_t">
+                <dl>
+                    <dt><a href="#">大人推荐</a> </dt>
+                    <dd><a href="#">暑期笔电买买买</a> </dd>
+                    <dd><a href="#"><span>硬货直降2000</span></a> </dd>
+                </dl>
+            </div>
+            <div class="big_b small_b">
+                <dl>
+                    <dt><a href="#">发现好物</a> </dt>
+                    <dd><a href="#">腕表还是看经典</a> </dd>
+                    <dd><a href="#"><span>卡西欧G-shock</span></a> </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="big">
+            <h4>新发现</h4>
+            <div class="big_t">
+                <dl>
+                    <dt><a href="#">索尼PS VR</a> </dt>
+                    <dd><a href="#">限时抢购</a> </dd>
+                    <dd><a href="#"><span>给你现实的临场感</span></a> </dd>
+                </dl>
+            </div>
+            <div class="big_b">
+                <dl>
+                    <dt><a href="#">新趋势</a> </dt>
+                    <dd><a href="#">斯巴达极限系列</a> </dd>
+                    <dd><a href="#"><span>芬兰手工打造</span></a> </dd>
+                </dl>
+            </div>
+            <div class="big_b big_b2">
+                <dl>
+                    <dt><a href="#">限时秒杀</a> </dt>
+                    <dd><a href="#">搞“机”看眼缘</a> </dd>
+                    <dd><a href="#"><span>小米尊享1899</span></a> </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="box_logo">
+            <div class="logo_L">
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="hidden1"></div>
+            </div>
+            <div class="logo_R">
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="pic">
+                    <a href="#"></a>
+                    <div class="hidden"></div>
+                </div>
+                <div class="hidden2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="tidai">
+        <div class="tidai1">
+            <p><a href="#">冰爽洁肤季</a> </p>
+            <p><a href="#">低至5件6折</a> </p>
+            <img src="images/page6tidai_03.jpg">
+        </div>
+        <div class="tidai2">
+            <p><a href="#">京东生活旅行</a> </p>
+            <p><a href="#">品质出行</a> </p>
+            <img src="images/page6tidai_09.jpg">
+        </div>
+        <div class="tidai3">
+            <p><a href="#">冰爽洁肤季</a> </p>
+            <p><a href="#">低至5件6折</a> </p>
+            <img src="images/page6tidai_06.jpg">
+        </div>
+    </div>
+</div>
+<div class="page7 inner">
+    <div class="page7_nav">
+        <div class="floor">
+            <div class="oneF">1F</div>
+            <p>服装鞋包</p>
+        </div>
+        <ul>
+            <li><a href="#">箱包</a><span></span></li>
+            <li><a href="#">箱包</a><span></span></li>
+            <li><a href="#">箱包</a><span></span></li>
+            <li><a href="#">箱包</a><span></span></li>
+            <li><a href="#">箱包</a><span></span></li>
+            <li><a href="#">箱包</a><span></span></li>
+            <li><a href="#">箱包</a><span></span></li>
+            <li><a href="#">箱包</a><span></span></li>
+            <li><a href="#">箱包</a><span></span></li>
+            <li><a href="#">箱包</a><span></span></li>
+
+        </ul>
+    </div>
+    <div class="page7_mid">
+        <div class="ml">
+            <div class="ml_1">
+                <h3>男装潮秋新势力</h3>
+                <p>最高满199</p>
+                <div class="cover">
+                    <div class="cover_1">
+                        <div class="icons"></div>
+                        <p><a href="#">男装</a> </p>
+                    </div>
+                    <div class="cover_1">
+                        <div class="icons"></div>
+                        <p><a href="#">男装</a> </p>
+                    </div>
+                    <div class="cover_1">
+                        <div class="icons"></div>
+                        <p><a href="#">男装</a> </p>
+                    </div>
+                    <div class="cover_1">
+                        <div class="icons"></div>
+                        <p><a href="#">男装</a> </p>
+                    </div>
+                    <div class="cover_1">
+                        <div class="icons"></div>
+                        <p><a href="#">男装</a> </p>
+                    </div>
+                    <div class="cover_1">
+                        <div class="icons"></div>
+                        <p><a href="#">男装</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ml_2">
+                <div class="ml_22">
+                    <ul>
+                        <li><a href="#"><span>潮流女装</span></a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">潮流女装</a> </li>
+                        <li><a href="#"><span>潮流女装</span></a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                    </ul>
+                </div>
+                <div class="ml_22">
+                    <ul>
+                        <li><a href="#">潮流女装</a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">潮流女装</a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                        <li><a href="#">潮流女装</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ml_3">
+                <h3><a href="#">浪漫七夕</a> </h3>
+                <p><a href="#">低至39</a> </p>
+            </div>
+        </div>
+        <div class="mm">
+            <div class="mm_1">
+                <h3><a href="#">浪漫七夕</a> </h3>
+                <p><a href="#">低至39</a> </p>
+            </div>
+            <div class="mm_2">
+                <h3><a href="#">浪漫七夕</a> </h3>
+                <p><a href="#">低至39</a> </p>
+            </div>
+            <div class="mm_1">
+                <h3><a href="#">浪漫七夕</a> </h3>
+                <p><a href="#">低至39</a> </p>
+            </div>
+        </div>
+        <div class="mr">
+            <div class="mr_1">
+                <h3><a href="#">浪漫七夕</a> </h3>
+                <p><a href="#">低至39</a> </p>
+            </div>
+            <div class="mr_1">
+                <h3><a href="#">浪漫七夕</a> </h3>
+                <p><a href="#">低至39</a> </p>
+            </div>
+            <div class="mr_1">
+                <h3><a href="#">浪漫七夕</a> </h3>
+                <p><a href="#">低至39</a> </p>
+            </div>
+            <div class="mr_1">
+                <h3><a href="#">浪漫七夕</a> </h3>
+                <p><a href="#">低至39</a> </p>
+            </div>
+            <div class="mr_2">
+                <div class="mr_1">
+                    <h3><a href="#">浪漫七夕</a> </h3>
+                    <p><a href="#">低至39</a> </p>
+                </div>
+                <div class="mr_1">
+                    <h3><a href="#">浪漫七夕</a> </h3>
+                    <p><a href="#">低至39</a> </p>
+                </div>
+            </div>
+            <div class="mr_3">
+                <h3><a href="#">浪漫七夕</a> </h3>
+                <p><a href="#">低至39</a> </p>
+            </div>
+
+        </div>
+    </div>
+    <ul class="tubiao">
+        <li><a href="#"><img src="images/shangbiao_03.jpg"> </a> </li>
+        <li><a href="#"><img src="images/shangbiao_03.jpg"> </a> </li>
+        <li><a href="#"><img src="images/shangbiao_03.jpg"> </a> </li>
+        <li><a href="#"><img src="images/shangbiao_03.jpg"> </a> </li>
+        <li><a href="#"><img src="images/shangbiao_03.jpg"> </a> </li>
+        <li><a href="#"><img src="images/shangbiao_03.jpg"> </a> </li>
+        <li><a href="#"><img src="images/shangbiao_03.jpg"> </a> </li>
+        <li><a href="#"><img src="images/shangbiao_03.jpg"> </a> </li>
+        <li><a href="#"><img src="images/shangbiao_03.jpg"> </a> </li>
+        <li><a  class="tubiao_last" href="#"><img src="images/shangbiao_03.jpg"> </a> </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
